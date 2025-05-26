@@ -1,0 +1,27 @@
+{
+  "name": "smartparkingsystem",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.7"
+  },
+  "tailwindCSS.includeLanguages": {
+  "html": "html",
+  "javascript": "javascript",
+  "javascriptreact": "html",
+  "typescriptreact": "html"
+},
+"editor.quickSuggestions": {
+  "strings": true
+}
+}
