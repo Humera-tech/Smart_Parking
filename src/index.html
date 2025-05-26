@@ -1,1 +1,391 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--navbar-->
+    <header class="bg-primary/40 backdrop-blur-md fixed top-0 left-0 w-full z-50 p-3">
+      <nav class=" relative h-14 flex justify-between items-center ">
+        <div class="flex-shrink-0">
+          <h2 class=" text-2xl md:whitespace-nowrap pl-2 font-serif">Smart Parking</h2>
+        </div>
+          <div  class=" hidden absolute top-0 left-0 w-full py-14 bg-fourth  border-b border-electric md:bg-transparent md:block md:py-0 md:static  md:border-none md:ml-auto md:width-auto" id="navMenu" >
+            <ul class="text-xl flex flex-col text-center gap-2 cursor-pointer md:flex-row md:justify-center md:items-center" >
+              <li class=" nav_link hover:text-electric ease-in duration-200 hover:bg-secondary p-3 hover:rounded-2xl "><a href="#Home">Home </a></li>
+              <li  class="nav_link hover:text-electric ease-in duration-200 hover:bg-secondary p-3 hover:rounded-2xl"><a href="#About">About </a></li>
+              <li  class="nav_link hover:text-electric ease-in duration-200 hover:bg-secondary p-3 hover:rounded-2xl">
+                <a href="#Features">Features </a>
+              </li>
+              <li class=" nav_link hover:text-electric ease-in duration-200 hover:bg-secondary p-3 hover:rounded-2xl "><a href="#Booking">Booking </a></li>
+              <li  class=" nav_link hover:text-electric ease-in duration-200 hover:bg-secondary p-3 hover:rounded-2xl">
+                <a href="#cont">Contact</a>
+              </li>
+            </ul>
+          <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden" id="cross">
+              <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div>
+          <button class=" hidden md:block p-3 pl-8 pr-8 bg-yellow-500 rounded-2xl mr-[40px] hover:bg-yellow-400">Login</button>
+        </div>
+        <div id="menu" class="md:hidden">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </div>
+      </nav>
+
+    </header>
+    <!--home-->
+    <section id="Home" class="scroll-mt-20 mt-[5rem] md:mt-0">
+      <div class="relative">
+        <img src="images/parkinglot2.jpg" alt="Parking Lot" class="w-full h-auto object-cover h-[80vh] md:h-[100vh] ">
+        <div class="absolute max-w-[90%] w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white z-10 text-center px-4 sm:px-6 md:px-10 md:w-auto ">
+          <h3 class="text-2xl sm:text-3xl md:text-6xl font-bold drop-shadow-md font-serif">
+            A Smoother Start to Every Journey
+          </h3>
+          <h4 class="text-base sm:text-lg md:text-xl mt-2 drop-shadow-md md:mt-4">
+            Park Where You Need, When You Need
+          </h4>
+          <button class="p-2 pl-4 pr-4 text-sm mt-2 rounded-2xl md:p-4 md:pl-8 md:pr-8 font-bold md:text-lg bg-yellow-500 md:mt-4"><a href="#Booking">Get started</a></button>
+        </div>
+        <div class="absolute inset-0 bg-black/30 backdrop-blur-sm z-0"></div>
+      </div>
+    </section>
+
+    <!--About Section-->
+    <section id="About" class="scroll-mt-20 mt-[3rem] md:mt-[5rem] px-6 md:px-[40px] py-10 md:ml-[2rem] md:mr-[2rem]">
+      <div class="max-w-7xl mx-auto">
+        
+        <h2 class="text-3xl md:text-4xl  text-center text-electric mb-10"></h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    
+          <div>
+            <h1 class="text-4xl mb-10">Why Choose Us</h1>
+            <p class="text-lg mb-4 ">
+              <span class="font-semibold text-yellow-500">SmartPark</span> is your intelligent companion for modern parking. 
+              Designed to reduce stress, enhance safety, and maximize convenience — our platform merges technology with real-life urban challenges.
+            </p>
+            <p class="text-lg mb-4">
+              With real-time updates, advanced guidance, and secure slot booking, we're changing how you experience city parking. Whether you’re headed to work, shopping, or on a road trip, <span class="text-yellow-500 font-semibold">SmartPark</span> has you covered.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 gap-4">
+ 
+            <div class="flex items-start bg-[linear-gradient(to_bottom_right,#4F5D75,#2D3142)] p-4 rounded-xl shadow-md hover:shadow-blue-500 transition-shadow duration-300">
+              <i class="fas fa-microchip text-yellow-500 text-2xl mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold text-lg">Smart Technology</h4>
+                <p class="text-sm">We integrate cutting-edge AI  to deliver real-time, intelligent parking solutions.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start bg-[linear-gradient(to_bottom_right,#4F5D75,#2D3142)] p-4 rounded-xl shadow-md hover:shadow-blue-500 transition-shadow duration-300">
+              <i class="fas fa-clock text-yellow-500 text-2xl mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold text-lg">Real-Time Monitoring</h4>
+                <p class="text-sm">Stay updated with live slot availability, booking status, and instant alerts.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start bg-[linear-gradient(to_bottom_right,#4F5D75,#2D3142)] p-4 rounded-xl shadow-md hover:shadow-blue-500 transition-shadow duration-300">
+              <i class="fas fa-user-friends text-yellow-500 text-2xl mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold text-lg">User-Centric Design</h4>
+                <p class="text-sm">Our intuitive interface ensures that booking and navigation are seamless for everyone.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start bg-[linear-gradient(to_bottom_right,#4F5D75,#2D3142)] p-4 rounded-xl shadow-md hover:shadow-blue-500 transition-shadow duration-300">
+              <i class="fas fa-lock text-yellow-500 text-2xl mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold text-lg">Security First</h4>
+                <p class="text-sm">With slot monitoring and user authentication, your vehicle’s safety is our top priority.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--Features-->
+    <section id="Features" class="scroll-mt-20 mt-[45px] m-2 ">
+      <div class="mt-8">
+        <div>
+            <h1 class="p-3  text-center text-4xl font-serif ">Unlock the Experience</h1>
+        </div>
+        <div class=" m-1 md:ml-[30px] md:mr-[30px]">
+          <ul class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-1 md:p-3 md:ml-8 md:mr-8">
+            <li class = " p-3 mt-[20px] flex flex-col items-center md:items-start rounded-2xl md:m-2  transition-transform duration-300 hover:scale-[1.02] shadow-md hover:shadow-glow bg-[linear-gradient(to_bottom_right,#4F5D75,#2D3142)]">
+              <h3 class="text-lg  font-bold font-serif p-3">
+                <i class="fas fa-calendar-check text-yellow-500 bg-primary rounded-2xl p-2" ></i>
+                 Pre-Booking System</h3>
+              <p class="p-3">Allows users to reserve parking slots in advance, ensuring a hassle-free experience, especially during peak hours or events. Users can select time slots, location, and duration beforehand.</p>
+            </li>
+            <li class="bg-[linear-gradient(to_bottom_right,#4F5D75,#2D3142)] p-3 mt-8 flex flex-col items-center md:items-start rounded-2xl md:m-2 transition-transform duration-300 hover:scale-[1.02] shadow-md hover:shadow-glow">
+              <h3 class="text-lg  font-bold font-serif p-3">
+                <i class="fas fa-users text-yellow-500 bg-primary rounded-2xl p-2 "></i>
+                Group Booking</h3>
+              <p class="p-3">Ideal for family outings or group trips involving multiple vehicles. Users can book adjacent slots together by entering the number plates of all vehicles involved to avoid unauthorized access and ensure parking availability.</p>
+            </li>
+            <li class="bg-[linear-gradient(to_bottom_right,#4F5D75,#2D3142)] p-3 mt-8 flex flex-col items-center md:items-start rounded-2xl md:m-2 transition-transform duration-300 hover:scale-[1.02] shadow-md hover:shadow-glow">
+              <h3 class="text-lg  font-bold font-serif p-3">
+                <i class="fas fa-shield-alt text-yellow-500 bg-primary rounded-2xl p-2"></i>
+                Safe Slot Monitor</h3>
+              <p class=" p-3">Enhances parking security by actively monitoring booked slots. If another vehicle attempts to park in a reserved slot, the system sends an instant alert to the rightful user, helping prevent misuse.</p>
+            </li>
+            <li class="bg-[linear-gradient(to_bottom_right,#4F5D75,#2D3142)] p-3 mt-8 flex flex-col items-center md:items-start rounded-2xl md:m-2 transition-transform duration-300 hover:scale-[1.02] shadow-md hover:shadow-glow">
+              <h3 class="text-lg  font-bold font-serif p-3">
+                <i class="fas fa-compass text-yellow-500 bg-primary rounded-2xl p-2"></i> 
+                Smart Park Guide</h3>
+              <p class="p-3">Solves the common issue of forgetting where the car is parked. Uses augmented reality (AR) to display a marker or path guiding users back to their parked vehicle, based on the stored location.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Booking Section -->
+    <section id="Booking" class="px-2 md:px-8 py-14 bg-fourth text-white">
+      <div class="max-w-4xl mx-auto  bg-[linear-gradient(to_bottom_right,#4F5D75,#2D3142)] backdrop-blur-md shadow-2xl p-4 md:p-10 rounded-2xl border border-white/20">
+        
+        <h2 class="text-4xl font-bold text-center text-yellow-400 mb-10 font-serif tracking-wide">
+          Book Your Parking Slot
+        </h2>
+
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-6 text-white">
+          <div>
+            <label class="block mb-2 font-medium">Enter name</label>
+            <input type="text" class="w-full p-3 rounded-lg bg-white/20 border border-white/30 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white">
+          </div>
+          <div>
+            <label class="block mb-2 font-medium bg-transparent">Email</label>
+            <input type="email" class="w-full p-3 rounded-lg bg-white/20 border border-white/30 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white">
+          </div>
+          <div>
+            <label class="block mb-2 font-medium">Select Location</label>
+            <select class="w-full p-3 rounded-lg bg-white/20 border border-white/30 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white placeholder:text-white">
+              <option class="text-black">Choose a location</option>
+              <option class="text-black">Downtown Plaza</option>
+              <option class="text-black">City Mall</option>
+              <option class="text-black">Business District</option>
+            </select>
+          </div>
+          <div>
+            <label class="block mb-2 font-medium">Slot Type</label>
+            <select class="w-full p-3 rounded-lg bg-white/20 border border-white/30 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white placeholder:text-white">
+              <option class="text-black">Car</option>
+              <option class="text-black">Bike</option>
+              
+            </select>
+          </div>
+          <div>
+            <label class="block mb-2 font-medium"> Vehicle Number</label>
+            <input type="text" placeholder="MH12 AB 1234" class="w-full p-3 rounded-lg bg-white/20 border border-white/30 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white placeholder:text-white">
+          </div>
+
+          <div>
+            <label class="block mb-2 font-medium">Select Date</label>
+            <input type="date" class="w-full p-3 rounded-lg bg-white/20 border border-white/30 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white placeholder:text-white">
+          </div>
+
+          <div>
+            <label class="block mb-2 font-medium">Select Time</label>
+            <input type="time" class="w-full p-3 rounded-lg bg-white/20 border border-white/30 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white">
+          </div>
+
+          <div>
+            <label class="block mb-2 font-medium"> Duration (hours)</label>
+            <input type="number" min="1" placeholder="e.g., 2" class="w-full p-3 rounded-lg bg-white/20 border border-white/30 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white placeholder:text-white">
+          </div>
+
+          <div class="md:col-span-2 mt-4">
+            <button type="submit" class="w-full py-3 bg-yellow-400 hover:bg-yellow-300 text-black font-bold rounded-lg shadow-lg transition duration-300">
+               Book Now
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+  
+
+    <!--Testimonial-->
+      <section id="Testimonials" class="scroll-mt-20 mt-[4rem] px-6 md:px-[40px] py-16 bg-fourth text-white">
+        <div class="max-w-7xl mx-auto text-center">
+          <h2 class="text-3xl mb-12 md:text-4xl font-bold text-electric  font-serif">What Our Users Say</h2>
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div class="bg-[linear-gradient(to_bottom_right,#4F5D75,#2D3142)] p-6 rounded-2xl shadow-md hover:shadow-blue-500 transition-shadow duration-300">
+              <div class="flex items-center mb-4">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User 1" class="w-12 h-12 rounded-full mr-4 border-2 border-yellow-500">
+                <div class="text-left">
+                  <h4 class="font-semibold text-lg">Rahul Mehta</h4>
+                  <p class="text-sm text-yellow-400">Software Engineer</p>
+                </div>
+              </div>
+              <p class="text-sm">"SmartPark makes my daily commute stress-free. I can always count on it to find a safe parking spot in seconds!"</p>
+            </div>
+            <div class="bg-[linear-gradient(to_bottom_right,#4F5D75,#2D3142)] p-6 rounded-2xl shadow-md hover:shadow-blue-500 transition-shadow duration-300">
+              <div class="flex items-center mb-4">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User 2" class="w-12 h-12 rounded-full mr-4 border-2 border-yellow-500">
+                <div class="text-left">
+                  <h4 class="font-semibold text-lg">Priya Sharma</h4>
+                  <p class="text-sm text-yellow-400">Marketing Manager</p>
+                </div>
+              </div>
+              <p class="text-sm">"The group booking feature is brilliant! I booked slots for my entire team without any hassle. Highly recommended."</p>
+            </div>
+            <div class="bg-[linear-gradient(to_bottom_right,#4F5D75,#2D3142)] p-6 rounded-2xl shadow-md hover:shadow-blue-500 transition-shadow duration-300">
+              <div class="flex items-center mb-4">
+                <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="User 3" class="w-12 h-12 rounded-full mr-4 border-2 border-yellow-500">
+                <div class="text-left">
+                  <h4 class="font-semibold text-lg">Amit Desai</h4>
+                  <p class="text-sm text-yellow-400">Entrepreneur</p>
+                </div>
+              </div>
+              <p class="text-sm">"The AR park guide helped me locate my car in a huge lot—no more walking around confused!"</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    <!--Faq's-->
+    <section id="FAQs" class="scroll-mt-20 mt-[4rem] px-6 md:px-[40px] py-16 bg-fourth text-white">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-electric mb-10 text-center font-serif">Frequently Asked Questions</h2>
+        
+        <div class="space-y-6">
+          <details class="group bg-[#2D3142] px-6 py-4 rounded-2xl shadow-md">
+            <summary class="flex justify-between items-center cursor-pointer text-lg font-medium text-white group-open:text-yellow-400">
+              How do I create an account on SmartPark?
+              <span class="text-yellow-400 group-open:rotate-180 transition-transform">&#x25BC;</span>
+            </summary>
+            <p class="mt-2 text-sm text-gray-300">
+              Creating an account is simple! Click on the “Login” button at the top-right corner, then select “Sign Up.” Fill in your details like name, email, and password, and you’re ready to start booking your parking slots securely.
+            </p>
+          </details>
+          <details class="group bg-[#2D3142] px-6 py-4 rounded-2xl shadow-md">
+            <summary class="flex justify-between items-center cursor-pointer text-lg font-medium text-white group-open:text-yellow-400">
+              Is the SmartPark system secure?
+              <span class="text-yellow-400 group-open:rotate-180 transition-transform">&#x25BC;</span>
+            </summary>
+            <p class="mt-2 text-sm text-gray-300">Yes! All transactions are encrypted and we partner only with verified parking providers and secure payment gateways.</p>
+          </details>
+
+          <details class="group bg-[#2D3142] px-6 py-4 rounded-2xl shadow-md">
+            <summary class="flex justify-between items-center cursor-pointer text-lg font-medium text-white group-open:text-yellow-400">
+              How do I book a parking slot using SmartPark?
+              <span class="text-yellow-400 group-open:rotate-180 transition-transform">&#x25BC;</span>
+            </summary>
+            <p class="mt-2 text-sm text-gray-300">Open the app or website, enter your location, select your preferred time slot and parking location, and confirm your booking in just a few clicks.</p>
+          </details>
+          
+
+          <details class="group bg-[#2D3142] px-6 py-4 rounded-2xl shadow-md">
+            <summary class="flex justify-between items-center cursor-pointer text-lg font-medium text-white group-open:text-yellow-400">
+              What if I can't find my car?
+              <span class="text-yellow-400 group-open:rotate-180 transition-transform">&#x25BC;</span>
+            </summary>
+            <p class="mt-2 text-sm text-gray-300">No worries! Use the AR Park Finder feature in our app to visually guide you to your vehicle with step-by-step arrows.</p>
+          </details>
+          
+
+      <details class="group bg-[#2D3142] px-6 py-4 rounded-2xl shadow-md">
+            <summary class="flex justify-between items-center cursor-pointer text-lg font-medium text-white group-open:text-yellow-400">
+              Can I book for a group or multiple vehicles?
+              <span class="text-yellow-400 group-open:rotate-180 transition-transform">&#x25BC;</span>
+            </summary>
+            <p class="mt-2 text-sm text-gray-300">Absolutely! Use our group booking feature to reserve multiple slots for your team or family members in one go.</p>
+          </details>
+
+      
+
+    </section>
+
+    <!--Contact--> 
+    <section id="cont" class="scroll-mt-20 mt-[4rem] m-2  px-1 md:px-[150px] py-16 bg-fourth text-white">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+          <div class="">
+            <h2 class="text-3xl md:text-4xl font-bold text-electric mb-6 font-serif">Let’s Connect</h2>
+            <p class="text-gray-300 mb-6">
+               Feel free to drop a message!
+            </p>
+            
+            <ul class="space-y-4 text-sm text-gray-300">
+              <li><span class="font-semibold text-white">Email:</span> smartpark2025@gmail.com</li>
+              <li><span class="font-semibold text-white">Phone:</span> +91 534129854</li>
+              <li><span class="font-semibold text-white">Location:</span> Hyderabad, India</li>
+            </ul>
+
+            <div class="flex space-x-4 mt-6">
+              <a href="#" class="text-electric hover:text-yellow-400 transition-colors duration-300">LinkedIn</a>
+              <a href="#" class="text-electric hover:text-yellow-400 transition-colors duration-300">GitHub</a>
+              <a href="#" class="text-electric hover:text-yellow-400 transition-colors duration-300">Twitter</a>
+            </div>
+          </div>
+
+          <form action="#" method="POST" class="space-y-6">
+            <div>
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-300">Your Name</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Your Name" 
+                required 
+                class="w-full px-4 py-3 rounded-xl bg-[#2D3142] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-electric"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-300">Email Address</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Your Email" 
+                required 
+                class="w-full px-4 py-3 rounded-xl bg-[#2D3142] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-electric"
+              />
+            </div>
+
+            <div>
+              <label for="message" class="block mb-2 text-sm font-medium text-gray-300">Message</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows="5" 
+                placeholder="Write your message here..." 
+                required 
+                class="w-full px-4 py-3 rounded-xl bg-[#2D3142] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-electric resize-none"
+              ></textarea>
+            </div>
+
+            <button 
+              type="submit" 
+              class="w-full bg-gradient-to-br from-[#00b0e6] to-[#f17c3a] text-white font-semibold py-3 rounded-xl hover:from-blue-500 hover:to-orange-500 hover:bg-gradient-to-br transition-all duration-300">
+              Send Message
+            </button>
+          </form>
+        </div>
+    </section>
+
+    <footer class="bg-fourth text-gray-300 text-center py-6 mt-20">
+      <hr class="text-white mb-10 ml-20 mr-20"/>
+      <p class="text-sm">
+        &copy; 2025 <span class="text-electric">SmartPark</span>. All rights reserved.
+      </p>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
