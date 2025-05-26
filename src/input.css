@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+    body{
+        @apply text-white bg-fourth gap-4
+    }
+}
+
+.hover\:shadow-glow:hover {
+    box-shadow: 0 0 20px rgba(70, 162, 236, 0.6), 0 0 40px rgba(100, 255, 255, 0.4);
+  }
